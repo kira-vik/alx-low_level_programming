@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-     char error [] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	fprintf(stderr, error);
-	return (1);
+     char *error = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+     fprintf(stderr, error);
+     return (1);
 }
