@@ -1,25 +1,23 @@
 #include "main.h"
 #include <stdio.h>
-
 /**
- * main - print number of args
+ * main - my name is
  * Return: 0
  * @argc: amount of args
  * @argv: pointer to pointers array
  */
-
 int main(int argc, char *argv[])
 {
-	int n = 0;
 
-	while (argc)
+	int c = 0;
+
+	while (c < argc)
 	{
-		argv--;
-		argc--;
-		n++;
+		if (c == 0)
+		{
+			printf("%s\n", argv[c]);
+			break;
+		}
 	}
-
-	printf("%d\n", n - 1);
-
 	return (0);
 }
